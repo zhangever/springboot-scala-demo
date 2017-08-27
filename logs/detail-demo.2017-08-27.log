@@ -1,0 +1,917 @@
+08-27 16:42:25 915 main INFO - Starting SpringBootScalaDemoServiceApplication on dadansandeMacBook-Pro.local with PID 11241 (/Users/ever/dev/springboot-scala-demo/target/classes started by ever in /Users/ever/dev/springboot-scala-demo)
+08-27 16:42:25 932 main INFO - No active profile set, falling back to default profiles: default
+08-27 16:42:26 488 main INFO - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 16:42:26 CST 2017]; root of context hierarchy
+08-27 16:42:26 562 background-preinit INFO - HV000001: Hibernate Validator 5.3.5.Final
+08-27 16:42:29 921 main INFO - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$259a931] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08-27 16:42:31 448 main INFO - Tomcat initialized with port(s): 8080 (http)
+08-27 16:42:31 467 main INFO - Starting service [Tomcat]
+08-27 16:42:31 468 main INFO - Starting Servlet Engine: Apache Tomcat/8.5.16
+08-27 16:42:31 609 localhost-startStop-1 INFO - Initializing Spring embedded WebApplicationContext
+08-27 16:42:31 610 localhost-startStop-1 INFO - Root WebApplicationContext: initialization completed in 5123 ms
+08-27 16:42:31 828 localhost-startStop-1 INFO - Mapping filter: 'characterEncodingFilter' to: [/*]
+08-27 16:42:31 828 localhost-startStop-1 INFO - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08-27 16:42:31 828 localhost-startStop-1 INFO - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08-27 16:42:31 828 localhost-startStop-1 INFO - Mapping filter: 'requestContextFilter' to: [/*]
+08-27 16:42:31 829 localhost-startStop-1 INFO - Mapping filter: 'springSecurityFilterChain' to: [/*]
+08-27 16:42:31 830 localhost-startStop-1 INFO - Mapping servlet: 'dispatcherServlet' to [/]
+08-27 16:42:32 936 main INFO - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoController.index()
+08-27 16:42:32 937 main INFO - Mapped "{[/login]}" onto public java.lang.String com.github.ever.controller.DemoController.login()
+08-27 16:42:32 937 main INFO - Mapped "{[/exception],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoController.exception() throws com.github.ever.pojo.MyException
+08-27 16:42:32 942 main INFO - Mapped "{[/demo/divid],methods=[POST]}" onto public int com.github.ever.controller.DemoRestController.divid(com.github.ever.pojo.DemoBean)
+08-27 16:42:32 942 main INFO - Mapped "{[/demo/multi],methods=[POST]}" onto public int com.github.ever.controller.DemoRestController.multi(com.github.ever.pojo.DemoBean)
+08-27 16:42:32 943 main INFO - Mapped "{[/demo/listAllParameters],methods=[GET]}" onto public com.github.ever.pojo.ResponseData com.github.ever.controller.DemoRestController.listAllParameters()
+08-27 16:42:32 943 main INFO - Mapped "{[/demo/exception],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoRestController.exception() throws com.github.ever.pojo.MyException
+08-27 16:42:32 943 main INFO - Mapped "{[/demo/config],methods=[GET]}" onto public com.github.ever.config.TimeParametersConfig com.github.ever.controller.DemoRestController.config()
+08-27 16:42:32 944 main INFO - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+08-27 16:42:32 949 main INFO - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+08-27 16:42:32 951 main INFO - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+08-27 16:42:32 952 main INFO - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+08-27 16:42:32 955 main INFO - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08-27 16:42:32 956 main INFO - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08-27 16:42:33 466 main INFO - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51f95f0d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d98daa0, org.springframework.security.web.header.HeaderWriterFilter@4f2d014a, org.springframework.security.web.authentication.logout.LogoutFilter@634ff56, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17e0933c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bdf61ad, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b9d018b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6fc0bbc6, org.springframework.security.web.session.SessionManagementFilter@a7cf42f, org.springframework.security.web.access.ExceptionTranslationFilter@484149eb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3513c84c]
+08-27 16:42:33 705 main INFO - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 16:42:26 CST 2017]; root of context hierarchy
+08-27 16:42:33 775 main INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 16:42:33 776 main INFO - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 16:42:33 794 main INFO - Detected @ExceptionHandler methods in globalExceptionHandler
+08-27 16:42:33 833 main INFO - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 16:42:34 517 main INFO - Registering beans for JMX exposure on startup
+08-27 16:42:34 535 main INFO - Context refreshed
+08-27 16:42:34 564 main INFO - Found {0} custom documentation plugin(s)
+08-27 16:42:34 571 main INFO - Scanning for api listing references
+08-27 16:42:34 576 main INFO - Group for method config was demo-rest-controller
+08-27 16:42:34 578 main INFO - Request mapping: config belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 16:42:34 579 main INFO - Group for method divid was demo-rest-controller
+08-27 16:42:34 579 main INFO - Request mapping: divid belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 16:42:34 579 main INFO - Group for method exception was demo-rest-controller
+08-27 16:42:34 580 main INFO - Request mapping: exception belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 16:42:34 580 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 16:42:34 580 main INFO - Request mapping: listAllParameters belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 16:42:34 581 main INFO - Group for method multi was demo-rest-controller
+08-27 16:42:34 581 main INFO - Request mapping: multi belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 16:42:34 581 main INFO - Group for method exception was demo-controller
+08-27 16:42:34 582 main INFO - Request mapping: exception belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 16:42:34 582 main INFO - Group for method index was demo-controller
+08-27 16:42:34 582 main INFO - Request mapping: index belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 16:42:34 583 main INFO - Group for method login was demo-controller
+08-27 16:42:34 584 main INFO - Request mapping: login belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 16:42:34 588 main INFO - Created resource listing Path: /default/demo-controller Description: demo-controller Position: 0
+08-27 16:42:34 589 main INFO - Created resource listing Path: /default/demo-rest-controller Description: demo-rest-controller Position: 0
+08-27 16:42:34 606 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 606 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 16:42:34 615 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 616 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 16:42:34 624 main INFO - Cache key generated: /exception.com.github.ever.controller.DemoController.exception.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 624 main INFO - Caching aspect applied for cache operations with key /exception.com.github.ever.controller.DemoController.exception.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 636 main INFO - Group for method exception was demo-controller
+08-27 16:42:34 638 main INFO - Group for method exception was demo-controller
+08-27 16:42:34 645 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 645 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 16:42:34 645 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 645 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 16:42:34 645 main INFO - Cache key generated: /hello.com.github.ever.controller.DemoController.index.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 645 main INFO - Caching aspect applied for cache operations with key /hello.com.github.ever.controller.DemoController.index.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 646 main INFO - Group for method index was demo-controller
+08-27 16:42:34 647 main INFO - Group for method index was demo-controller
+08-27 16:42:34 649 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 649 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 16:42:34 649 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 649 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 16:42:34 649 main INFO - Cache key generated: /login.com.github.ever.controller.DemoController.login.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 649 main INFO - Caching aspect applied for cache operations with key /login.com.github.ever.controller.DemoController.login.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 650 main INFO - Group for method login was demo-controller
+08-27 16:42:34 651 main INFO - Group for method login was demo-controller
+08-27 16:42:34 652 main INFO - Group for method login was demo-controller
+08-27 16:42:34 652 main INFO - Group for method login was demo-controller
+08-27 16:42:34 653 main INFO - Group for method login was demo-controller
+08-27 16:42:34 654 main INFO - Group for method login was demo-controller
+08-27 16:42:34 655 main INFO - Group for method login was demo-controller
+08-27 16:42:34 656 main INFO - Group for method login was demo-controller
+08-27 16:42:34 657 main INFO - Group for method login was demo-controller
+08-27 16:42:34 658 main INFO - Group for method login was demo-controller
+08-27 16:42:34 659 main INFO - Group for method login was demo-controller
+08-27 16:42:34 660 main INFO - Group for method login was demo-controller
+08-27 16:42:34 660 main INFO - Group for method login was demo-controller
+08-27 16:42:34 661 main INFO - Group for method login was demo-controller
+08-27 16:42:34 662 main INFO - Group for method login was demo-controller
+08-27 16:42:34 663 main INFO - Group for method login was demo-controller
+08-27 16:42:34 678 main INFO - Cache Key Generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 679 main INFO - Caching aspect applied for cache models with key com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 680 main INFO - Cache key generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 680 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 711 main INFO - Cache Key Generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 711 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 712 main INFO - Cache key generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 712 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.config.TimeParametersConfig(true)
+08-27 16:42:34 714 main INFO - Cache key generated: /demo/config.com.github.ever.controller.DemoRestController.config.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 714 main INFO - Caching aspect applied for cache operations with key /demo/config.com.github.ever.controller.DemoRestController.config.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 715 main INFO - Group for method config was demo-rest-controller
+08-27 16:42:34 718 main INFO - Group for method config was demo-rest-controller
+08-27 16:42:34 720 main INFO - Cache Key Generated: int(true)
+08-27 16:42:34 720 main INFO - Caching aspect applied for cache models with key int(true)
+08-27 16:42:34 721 main INFO - Cache Key Generated: int(true)
+08-27 16:42:34 721 main INFO - Caching aspect applied for cache modelDependencies with key int(true)
+08-27 16:42:34 721 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 721 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 721 main INFO - Cache key generated: com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 722 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 725 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 726 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 726 main INFO - Cache key generated: com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 726 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 727 main INFO - Cache key generated: /demo/divid.com.github.ever.controller.DemoRestController.divid.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 727 main INFO - Caching aspect applied for cache operations with key /demo/divid.com.github.ever.controller.DemoRestController.divid.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 736 main INFO - Group for method divid was demo-rest-controller
+08-27 16:42:34 746 main INFO - Group for method divid was demo-rest-controller
+08-27 16:42:34 752 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 755 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 16:42:34 758 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 16:42:34 758 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 16:42:34 758 main INFO - Cache key generated: /demo/exception.com.github.ever.controller.DemoRestController.exception.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 759 main INFO - Caching aspect applied for cache operations with key /demo/exception.com.github.ever.controller.DemoRestController.exception.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 760 main INFO - Group for method exception was demo-rest-controller
+08-27 16:42:34 761 main INFO - Group for method exception was demo-rest-controller
+08-27 16:42:34 762 main INFO - Generating unique operation named: exceptionUsingGET_1
+08-27 16:42:34 764 main INFO - Cache Key Generated: com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 764 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 765 main INFO - Cache key generated: com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 765 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 770 main INFO - Cache Key Generated: com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 770 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 771 main INFO - Cache key generated: com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 773 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.ResponseData(true)
+08-27 16:42:34 774 main INFO - Cache key generated: /demo/listAllParameters.com.github.ever.controller.DemoRestController.listAllParameters.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 774 main INFO - Caching aspect applied for cache operations with key /demo/listAllParameters.com.github.ever.controller.DemoRestController.listAllParameters.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 775 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 16:42:34 776 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 16:42:34 777 main INFO - Cache Key Generated: int(true)
+08-27 16:42:34 777 main INFO - Caching aspect applied for cache models with key int(true)
+08-27 16:42:34 777 main INFO - Cache Key Generated: int(true)
+08-27 16:42:34 778 main INFO - Caching aspect applied for cache modelDependencies with key int(true)
+08-27 16:42:34 778 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 778 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 778 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 778 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.DemoBean(false)
+08-27 16:42:34 778 main INFO - Cache key generated: /demo/multi.com.github.ever.controller.DemoRestController.multi.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 778 main INFO - Caching aspect applied for cache operations with key /demo/multi.com.github.ever.controller.DemoRestController.multi.DefaultGenericTypeNamingStrategy
+08-27 16:42:34 780 main INFO - Group for method multi was demo-rest-controller
+08-27 16:42:34 782 main INFO - Group for method multi was demo-rest-controller
+08-27 16:42:34 818 main INFO - Initializing ProtocolHandler ["http-nio-8080"]
+08-27 16:42:34 847 main INFO - Starting ProtocolHandler ["http-nio-8080"]
+08-27 16:42:34 876 main INFO - Using a shared selector for servlet write/read
+08-27 16:42:34 899 main INFO - Tomcat started on port(s): 8080 (http)
+08-27 16:42:34 906 main INFO - Started SpringBootScalaDemoServiceApplication in 10.448 seconds (JVM running for 12.103)
+08-27 16:42:46 797 http-nio-8080-exec-1 INFO - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08-27 16:42:46 800 http-nio-8080-exec-1 INFO - FrameworkServlet 'dispatcherServlet': initialization started
+08-27 16:42:46 822 http-nio-8080-exec-1 INFO - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+08-27 16:42:59 100 http-nio-8080-exec-4 ERROR - No transaction aspect-managed TransactionStatus in scope
+org.springframework.transaction.NoTransactionException: No transaction aspect-managed TransactionStatus in scope
+	at com.isuwang.commons.converters.SqlImplicits$.getConnection(SqlImplicits.scala:137) ~[service-commons_2.12-1.1-SNAPSHOT.jar:1.1-SNAPSHOT]
+	at com.isuwang.commons.converters.SqlImplicits$.withConnection(SqlImplicits.scala:75) ~[service-commons_2.12-1.1-SNAPSHOT.jar:1.1-SNAPSHOT]
+	at com.isuwang.commons.converters.SqlImplicits$.rows(SqlImplicits.scala:69) ~[service-commons_2.12-1.1-SNAPSHOT.jar:1.1-SNAPSHOT]
+	at com.github.ever.BgSql$.listAllParameters(BgSql.scala:21) ~[classes/:na]
+	at com.github.ever.action.ListAllParameters.action(ListAllParameters.scala:13) ~[classes/:na]
+	at com.github.ever.controller.DemoRestController.listAllParameters(DemoRestController.java:35) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+08-27 16:42:59 277 http-nio-8080-exec-5 INFO - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+08-27 16:42:59 394 http-nio-8080-exec-5 INFO - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+08-27 16:42:59 395 http-nio-8080-exec-5 INFO - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+08-27 16:42:59 396 http-nio-8080-exec-5 INFO - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+08-27 16:42:59 396 http-nio-8080-exec-5 INFO - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+08-27 16:42:59 405 http-nio-8080-exec-5 INFO - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+08-27 16:42:59 405 http-nio-8080-exec-5 INFO - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+08-27 17:00:12 747 Thread-3 INFO - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 16:42:26 CST 2017]; root of context hierarchy
+08-27 17:00:12 757 Thread-3 INFO - Unregistering JMX-exposed beans on shutdown
+08-27 17:00:31 634 main INFO - Starting SpringBootScalaDemoServiceApplication on dadansandeMacBook-Pro.local with PID 11316 (/Users/ever/dev/springboot-scala-demo/target/classes started by ever in /Users/ever/dev/springboot-scala-demo)
+08-27 17:00:31 689 main INFO - No active profile set, falling back to default profiles: default
+08-27 17:00:33 228 main INFO - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 17:00:33 CST 2017]; root of context hierarchy
+08-27 17:00:33 294 background-preinit INFO - HV000001: Hibernate Validator 5.3.5.Final
+08-27 17:00:37 435 main INFO - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d751d4f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08-27 17:00:38 845 main INFO - Tomcat initialized with port(s): 8080 (http)
+08-27 17:00:38 876 main INFO - Starting service [Tomcat]
+08-27 17:00:38 878 main INFO - Starting Servlet Engine: Apache Tomcat/8.5.16
+08-27 17:00:39 146 localhost-startStop-1 INFO - Initializing Spring embedded WebApplicationContext
+08-27 17:00:39 147 localhost-startStop-1 INFO - Root WebApplicationContext: initialization completed in 5919 ms
+08-27 17:00:39 542 localhost-startStop-1 INFO - Mapping filter: 'characterEncodingFilter' to: [/*]
+08-27 17:00:39 544 localhost-startStop-1 INFO - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08-27 17:00:39 545 localhost-startStop-1 INFO - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08-27 17:00:39 546 localhost-startStop-1 INFO - Mapping filter: 'requestContextFilter' to: [/*]
+08-27 17:00:39 548 localhost-startStop-1 INFO - Mapping filter: 'springSecurityFilterChain' to: [/*]
+08-27 17:00:39 549 localhost-startStop-1 INFO - Mapping servlet: 'dispatcherServlet' to [/]
+08-27 17:00:42 224 main INFO - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoController.index()
+08-27 17:00:42 226 main INFO - Mapped "{[/login]}" onto public java.lang.String com.github.ever.controller.DemoController.login()
+08-27 17:00:42 234 main INFO - Mapped "{[/exception],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoController.exception() throws com.github.ever.pojo.MyException
+08-27 17:00:42 242 main INFO - Mapped "{[/demo/multi],methods=[POST]}" onto public int com.github.ever.controller.DemoRestController.multi(com.github.ever.pojo.DemoBean)
+08-27 17:00:42 245 main INFO - Mapped "{[/demo/listAllParameters],methods=[GET]}" onto public com.github.ever.pojo.ResponseData com.github.ever.controller.DemoRestController.listAllParameters()
+08-27 17:00:42 247 main INFO - Mapped "{[/demo/divid],methods=[POST]}" onto public int com.github.ever.controller.DemoRestController.divid(com.github.ever.pojo.DemoBean)
+08-27 17:00:42 248 main INFO - Mapped "{[/demo/exception],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoRestController.exception() throws com.github.ever.pojo.MyException
+08-27 17:00:42 249 main INFO - Mapped "{[/demo/config],methods=[GET]}" onto public com.github.ever.config.TimeParametersConfig com.github.ever.controller.DemoRestController.config()
+08-27 17:00:42 250 main INFO - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+08-27 17:00:42 257 main INFO - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+08-27 17:00:42 258 main INFO - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+08-27 17:00:42 259 main INFO - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+08-27 17:00:42 265 main INFO - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08-27 17:00:42 267 main INFO - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08-27 17:00:43 233 main INFO - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a515e5d, org.springframework.security.web.context.SecurityContextPersistenceFilter@67eec8e1, org.springframework.security.web.header.HeaderWriterFilter@17043b04, org.springframework.security.web.authentication.logout.LogoutFilter@115ca7de, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2291d9a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ba93755, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ccfdaef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@423a0e1d, org.springframework.security.web.session.SessionManagementFilter@31f295b6, org.springframework.security.web.access.ExceptionTranslationFilter@12e12ac9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73fbdf68]
+08-27 17:00:43 889 main INFO - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 17:00:33 CST 2017]; root of context hierarchy
+08-27 17:00:44 031 main INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 17:00:44 031 main INFO - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 17:00:44 069 main INFO - Detected @ExceptionHandler methods in globalExceptionHandler
+08-27 17:00:44 185 main INFO - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 17:00:46 309 main INFO - Registering beans for JMX exposure on startup
+08-27 17:00:46 374 main INFO - Context refreshed
+08-27 17:00:46 455 main INFO - Found {0} custom documentation plugin(s)
+08-27 17:00:46 473 main INFO - Scanning for api listing references
+08-27 17:00:46 484 main INFO - Group for method config was demo-rest-controller
+08-27 17:00:46 488 main INFO - Request mapping: config belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:00:46 493 main INFO - Group for method divid was demo-rest-controller
+08-27 17:00:46 499 main INFO - Request mapping: divid belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:00:46 501 main INFO - Group for method exception was demo-rest-controller
+08-27 17:00:46 505 main INFO - Request mapping: exception belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:00:46 507 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 17:00:46 508 main INFO - Request mapping: listAllParameters belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:00:46 510 main INFO - Group for method multi was demo-rest-controller
+08-27 17:00:46 510 main INFO - Request mapping: multi belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:00:46 513 main INFO - Group for method exception was demo-controller
+08-27 17:00:46 513 main INFO - Request mapping: exception belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 17:00:46 514 main INFO - Group for method index was demo-controller
+08-27 17:00:46 514 main INFO - Request mapping: index belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 17:00:46 515 main INFO - Group for method login was demo-controller
+08-27 17:00:46 515 main INFO - Request mapping: login belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 17:00:46 571 main INFO - Created resource listing Path: /default/demo-controller Description: demo-controller Position: 0
+08-27 17:00:46 579 main INFO - Created resource listing Path: /default/demo-rest-controller Description: demo-rest-controller Position: 0
+08-27 17:00:46 688 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:46 689 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:00:46 738 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:46 739 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:00:46 786 main INFO - Cache key generated: /exception.com.github.ever.controller.DemoController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:00:46 788 main INFO - Caching aspect applied for cache operations with key /exception.com.github.ever.controller.DemoController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:00:46 880 main INFO - Group for method exception was demo-controller
+08-27 17:00:46 886 main INFO - Group for method exception was demo-controller
+08-27 17:00:46 897 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:46 898 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:00:46 898 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:46 898 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:00:46 899 main INFO - Cache key generated: /hello.com.github.ever.controller.DemoController.index.DefaultGenericTypeNamingStrategy
+08-27 17:00:46 899 main INFO - Caching aspect applied for cache operations with key /hello.com.github.ever.controller.DemoController.index.DefaultGenericTypeNamingStrategy
+08-27 17:00:46 901 main INFO - Group for method index was demo-controller
+08-27 17:00:46 903 main INFO - Group for method index was demo-controller
+08-27 17:00:46 905 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:46 906 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:00:46 906 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:46 906 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:00:46 907 main INFO - Cache key generated: /login.com.github.ever.controller.DemoController.login.DefaultGenericTypeNamingStrategy
+08-27 17:00:46 907 main INFO - Caching aspect applied for cache operations with key /login.com.github.ever.controller.DemoController.login.DefaultGenericTypeNamingStrategy
+08-27 17:00:46 908 main INFO - Group for method login was demo-controller
+08-27 17:00:46 909 main INFO - Group for method login was demo-controller
+08-27 17:00:46 912 main INFO - Group for method login was demo-controller
+08-27 17:00:46 913 main INFO - Group for method login was demo-controller
+08-27 17:00:46 915 main INFO - Group for method login was demo-controller
+08-27 17:00:46 917 main INFO - Group for method login was demo-controller
+08-27 17:00:46 919 main INFO - Group for method login was demo-controller
+08-27 17:00:46 920 main INFO - Group for method login was demo-controller
+08-27 17:00:46 923 main INFO - Group for method login was demo-controller
+08-27 17:00:46 924 main INFO - Group for method login was demo-controller
+08-27 17:00:46 930 main INFO - Group for method login was demo-controller
+08-27 17:00:46 932 main INFO - Group for method login was demo-controller
+08-27 17:00:46 936 main INFO - Group for method login was demo-controller
+08-27 17:00:47 004 main INFO - Group for method login was demo-controller
+08-27 17:00:47 008 main INFO - Group for method login was demo-controller
+08-27 17:00:47 010 main INFO - Group for method login was demo-controller
+08-27 17:00:47 109 main INFO - Cache Key Generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 109 main INFO - Caching aspect applied for cache models with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 113 main INFO - Cache key generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 113 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 198 main INFO - Cache Key Generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 199 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 200 main INFO - Cache key generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 201 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:00:47 204 main INFO - Cache key generated: /demo/config.com.github.ever.controller.DemoRestController.config.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 205 main INFO - Caching aspect applied for cache operations with key /demo/config.com.github.ever.controller.DemoRestController.config.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 222 main INFO - Group for method config was demo-rest-controller
+08-27 17:00:47 233 main INFO - Group for method config was demo-rest-controller
+08-27 17:00:47 256 main INFO - Cache Key Generated: int(true)
+08-27 17:00:47 257 main INFO - Caching aspect applied for cache models with key int(true)
+08-27 17:00:47 258 main INFO - Cache Key Generated: int(true)
+08-27 17:00:47 259 main INFO - Caching aspect applied for cache modelDependencies with key int(true)
+08-27 17:00:47 269 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 269 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 270 main INFO - Cache key generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 270 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 277 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 277 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 279 main INFO - Cache key generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 280 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 297 main INFO - Cache key generated: /demo/divid.com.github.ever.controller.DemoRestController.divid.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 298 main INFO - Caching aspect applied for cache operations with key /demo/divid.com.github.ever.controller.DemoRestController.divid.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 332 main INFO - Group for method divid was demo-rest-controller
+08-27 17:00:47 358 main INFO - Group for method divid was demo-rest-controller
+08-27 17:00:47 389 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:47 389 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:00:47 389 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:00:47 389 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:00:47 391 main INFO - Cache key generated: /demo/exception.com.github.ever.controller.DemoRestController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 393 main INFO - Caching aspect applied for cache operations with key /demo/exception.com.github.ever.controller.DemoRestController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 395 main INFO - Group for method exception was demo-rest-controller
+08-27 17:00:47 399 main INFO - Group for method exception was demo-rest-controller
+08-27 17:00:47 400 main INFO - Generating unique operation named: exceptionUsingGET_1
+08-27 17:00:47 409 main INFO - Cache Key Generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 416 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 416 main INFO - Cache key generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 417 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 447 main INFO - Cache Key Generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 447 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 447 main INFO - Cache key generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 448 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.ResponseData(true)
+08-27 17:00:47 448 main INFO - Cache key generated: /demo/listAllParameters.com.github.ever.controller.DemoRestController.listAllParameters.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 449 main INFO - Caching aspect applied for cache operations with key /demo/listAllParameters.com.github.ever.controller.DemoRestController.listAllParameters.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 454 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 17:00:47 457 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 17:00:47 469 main INFO - Cache Key Generated: int(true)
+08-27 17:00:47 470 main INFO - Caching aspect applied for cache models with key int(true)
+08-27 17:00:47 472 main INFO - Cache Key Generated: int(true)
+08-27 17:00:47 472 main INFO - Caching aspect applied for cache modelDependencies with key int(true)
+08-27 17:00:47 473 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 475 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 477 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 489 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.DemoBean(false)
+08-27 17:00:47 491 main INFO - Cache key generated: /demo/multi.com.github.ever.controller.DemoRestController.multi.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 492 main INFO - Caching aspect applied for cache operations with key /demo/multi.com.github.ever.controller.DemoRestController.multi.DefaultGenericTypeNamingStrategy
+08-27 17:00:47 497 main INFO - Group for method multi was demo-rest-controller
+08-27 17:00:47 503 main INFO - Group for method multi was demo-rest-controller
+08-27 17:00:47 585 main INFO - Initializing ProtocolHandler ["http-nio-8080"]
+08-27 17:00:47 619 main INFO - Starting ProtocolHandler ["http-nio-8080"]
+08-27 17:00:47 712 main INFO - Using a shared selector for servlet write/read
+08-27 17:00:47 787 main INFO - Tomcat started on port(s): 8080 (http)
+08-27 17:00:47 808 main INFO - Started SpringBootScalaDemoServiceApplication in 18.147 seconds (JVM running for 19.93)
+08-27 17:00:56 750 http-nio-8080-exec-1 INFO - Initializing Spring FrameworkServlet 'dispatcherServlet'
+08-27 17:00:56 750 http-nio-8080-exec-1 INFO - FrameworkServlet 'dispatcherServlet': initialization started
+08-27 17:00:56 821 http-nio-8080-exec-1 INFO - FrameworkServlet 'dispatcherServlet': initialization completed in 71 ms
+08-27 17:00:57 585 http-nio-8080-exec-1 ERROR - Unable to create initial connections of pool.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_112]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_112]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2196) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2229) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_112]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_112]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) [tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) [tomcat-jdbc-8.5.16.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:246) [spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) [spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:447) [spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:277) [spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) [spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) [spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at com.github.ever.controller.DemoRestController$$EnhancerBySpringCGLIB$$349fc2ed.listAllParameters(<generated>) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_112]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_112]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204) ~[na:1.8.0_112]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_112]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_112]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_112]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 115 common frames omitted
+08-27 17:00:57 623 http-nio-8080-exec-1 ERROR - Could not open JDBC Connection for transaction; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+org.springframework.transaction.CannotCreateTransactionException: Could not open JDBC Connection for transaction; nested exception is com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:289) ~[spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:447) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:277) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96) ~[spring-tx-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at com.github.ever.controller.DemoRestController$$EnhancerBySpringCGLIB$$349fc2ed.listAllParameters(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_112]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_112]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.2.3.RELEASE.jar:4.2.3.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_112]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_112]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.16.jar:8.5.16]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_112]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_112]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_112]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:989) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:341) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2196) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2229) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2024) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_112]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_112]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_112]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_112]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:310) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:203) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:735) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:667) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:482) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:154) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:118) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:107) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:131) ~[tomcat-jdbc-8.5.16.jar:na]
+	at org.springframework.jdbc.datasource.DataSourceTransactionManager.doBegin(DataSourceTransactionManager.java:246) ~[spring-jdbc-4.3.10.RELEASE.jar:4.3.10.RELEASE]
+	... 93 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_112]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_112]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204) ~[na:1.8.0_112]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_112]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_112]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_112]
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:211) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:300) ~[mysql-connector-java-5.1.43.jar:5.1.43]
+	... 115 common frames omitted
+08-27 17:00:58 426 http-nio-8080-exec-3 INFO - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+08-27 17:00:58 705 http-nio-8080-exec-3 INFO - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+08-27 17:00:58 706 http-nio-8080-exec-3 INFO - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+08-27 17:00:58 706 http-nio-8080-exec-3 INFO - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+08-27 17:00:58 706 http-nio-8080-exec-3 INFO - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+08-27 17:00:58 740 http-nio-8080-exec-3 INFO - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+08-27 17:00:58 742 http-nio-8080-exec-3 INFO - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+08-27 17:01:34 276 Thread-3 INFO - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 17:00:33 CST 2017]; root of context hierarchy
+08-27 17:01:34 286 Thread-3 INFO - Unregistering JMX-exposed beans on shutdown
+08-27 17:01:41 939 main INFO - Starting SpringBootScalaDemoServiceApplication on dadansandeMacBook-Pro.local with PID 11326 (/Users/ever/dev/springboot-scala-demo/target/classes started by ever in /Users/ever/dev/springboot-scala-demo)
+08-27 17:01:41 970 main INFO - No active profile set, falling back to default profiles: default
+08-27 17:01:43 536 main INFO - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 17:01:43 CST 2017]; root of context hierarchy
+08-27 17:01:43 725 background-preinit INFO - HV000001: Hibernate Validator 5.3.5.Final
+08-27 17:01:50 923 main INFO - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c0357f07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+08-27 17:01:53 676 main INFO - Tomcat initialized with port(s): 8080 (http)
+08-27 17:01:53 708 main INFO - Starting service [Tomcat]
+08-27 17:01:53 710 main INFO - Starting Servlet Engine: Apache Tomcat/8.5.16
+08-27 17:01:54 004 localhost-startStop-1 INFO - Initializing Spring embedded WebApplicationContext
+08-27 17:01:54 005 localhost-startStop-1 INFO - Root WebApplicationContext: initialization completed in 10469 ms
+08-27 17:01:54 711 localhost-startStop-1 INFO - Mapping filter: 'characterEncodingFilter' to: [/*]
+08-27 17:01:54 712 localhost-startStop-1 INFO - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+08-27 17:01:54 713 localhost-startStop-1 INFO - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+08-27 17:01:54 714 localhost-startStop-1 INFO - Mapping filter: 'requestContextFilter' to: [/*]
+08-27 17:01:54 718 localhost-startStop-1 INFO - Mapping filter: 'springSecurityFilterChain' to: [/*]
+08-27 17:01:54 719 localhost-startStop-1 INFO - Mapping servlet: 'dispatcherServlet' to [/]
+08-27 17:01:57 837 main INFO - Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoController.index()
+08-27 17:01:57 839 main INFO - Mapped "{[/login]}" onto public java.lang.String com.github.ever.controller.DemoController.login()
+08-27 17:01:57 839 main INFO - Mapped "{[/exception],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoController.exception() throws com.github.ever.pojo.MyException
+08-27 17:01:57 850 main INFO - Mapped "{[/demo/multi],methods=[POST]}" onto public int com.github.ever.controller.DemoRestController.multi(com.github.ever.pojo.DemoBean)
+08-27 17:01:57 851 main INFO - Mapped "{[/demo/listAllParameters],methods=[GET]}" onto public com.github.ever.pojo.ResponseData com.github.ever.controller.DemoRestController.listAllParameters()
+08-27 17:01:57 851 main INFO - Mapped "{[/demo/divid],methods=[POST]}" onto public int com.github.ever.controller.DemoRestController.divid(com.github.ever.pojo.DemoBean)
+08-27 17:01:57 854 main INFO - Mapped "{[/demo/exception],methods=[GET]}" onto public java.lang.String com.github.ever.controller.DemoRestController.exception() throws com.github.ever.pojo.MyException
+08-27 17:01:57 854 main INFO - Mapped "{[/demo/config],methods=[GET]}" onto public com.github.ever.config.TimeParametersConfig com.github.ever.controller.DemoRestController.config()
+08-27 17:01:57 856 main INFO - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+08-27 17:01:57 863 main INFO - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+08-27 17:01:57 864 main INFO - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+08-27 17:01:57 865 main INFO - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+08-27 17:01:57 876 main INFO - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+08-27 17:01:57 877 main INFO - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+08-27 17:01:59 220 main INFO - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25c2a9e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@511f5b1d, org.springframework.security.web.header.HeaderWriterFilter@12e12ac9, org.springframework.security.web.authentication.logout.LogoutFilter@19bedeb8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4c51077d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a687d8d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@546394ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9b23822, org.springframework.security.web.session.SessionManagementFilter@7a8341c1, org.springframework.security.web.access.ExceptionTranslationFilter@467b0f6e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f6f3cc]
+08-27 17:01:59 946 main INFO - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7692d9cc: startup date [Sun Aug 27 17:01:43 CST 2017]; root of context hierarchy
+08-27 17:02:00 116 main INFO - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 17:02:00 117 main INFO - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 17:02:00 159 main INFO - Detected @ExceptionHandler methods in globalExceptionHandler
+08-27 17:02:00 217 main INFO - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+08-27 17:02:02 100 main INFO - Registering beans for JMX exposure on startup
+08-27 17:02:02 144 main INFO - Context refreshed
+08-27 17:02:02 204 main INFO - Found {0} custom documentation plugin(s)
+08-27 17:02:02 225 main INFO - Scanning for api listing references
+08-27 17:02:02 238 main INFO - Group for method config was demo-rest-controller
+08-27 17:02:02 243 main INFO - Request mapping: config belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:02:02 246 main INFO - Group for method divid was demo-rest-controller
+08-27 17:02:02 246 main INFO - Request mapping: divid belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:02:02 247 main INFO - Group for method exception was demo-rest-controller
+08-27 17:02:02 248 main INFO - Request mapping: exception belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:02:02 249 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 17:02:02 249 main INFO - Request mapping: listAllParameters belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:02:02 250 main INFO - Group for method multi was demo-rest-controller
+08-27 17:02:02 251 main INFO - Request mapping: multi belongs to groups: [[ResourceGroup{groupName='demo-rest-controller', position=0, controller=com.github.ever.controller.DemoRestController}]] 
+08-27 17:02:02 253 main INFO - Group for method exception was demo-controller
+08-27 17:02:02 253 main INFO - Request mapping: exception belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 17:02:02 254 main INFO - Group for method index was demo-controller
+08-27 17:02:02 255 main INFO - Request mapping: index belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 17:02:02 256 main INFO - Group for method login was demo-controller
+08-27 17:02:02 256 main INFO - Request mapping: login belongs to groups: [[ResourceGroup{groupName='demo-controller', position=0, controller=com.github.ever.controller.DemoController}]] 
+08-27 17:02:02 270 main INFO - Created resource listing Path: /default/demo-rest-controller Description: demo-rest-controller Position: 0
+08-27 17:02:02 274 main INFO - Created resource listing Path: /default/demo-controller Description: demo-controller Position: 0
+08-27 17:02:02 359 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 361 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:02:02 390 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 391 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:02:02 412 main INFO - Cache key generated: /exception.com.github.ever.controller.DemoController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 413 main INFO - Caching aspect applied for cache operations with key /exception.com.github.ever.controller.DemoController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 449 main INFO - Group for method exception was demo-controller
+08-27 17:02:02 455 main INFO - Group for method exception was demo-controller
+08-27 17:02:02 477 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 478 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:02:02 479 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 479 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:02:02 484 main INFO - Cache key generated: /hello.com.github.ever.controller.DemoController.index.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 484 main INFO - Caching aspect applied for cache operations with key /hello.com.github.ever.controller.DemoController.index.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 486 main INFO - Group for method index was demo-controller
+08-27 17:02:02 488 main INFO - Group for method index was demo-controller
+08-27 17:02:02 492 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 492 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:02:02 492 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 494 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:02:02 495 main INFO - Cache key generated: /login.com.github.ever.controller.DemoController.login.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 495 main INFO - Caching aspect applied for cache operations with key /login.com.github.ever.controller.DemoController.login.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 498 main INFO - Group for method login was demo-controller
+08-27 17:02:02 500 main INFO - Group for method login was demo-controller
+08-27 17:02:02 502 main INFO - Group for method login was demo-controller
+08-27 17:02:02 503 main INFO - Group for method login was demo-controller
+08-27 17:02:02 506 main INFO - Group for method login was demo-controller
+08-27 17:02:02 510 main INFO - Group for method login was demo-controller
+08-27 17:02:02 512 main INFO - Group for method login was demo-controller
+08-27 17:02:02 517 main INFO - Group for method login was demo-controller
+08-27 17:02:02 519 main INFO - Group for method login was demo-controller
+08-27 17:02:02 522 main INFO - Group for method login was demo-controller
+08-27 17:02:02 524 main INFO - Group for method login was demo-controller
+08-27 17:02:02 525 main INFO - Group for method login was demo-controller
+08-27 17:02:02 527 main INFO - Group for method login was demo-controller
+08-27 17:02:02 531 main INFO - Group for method login was demo-controller
+08-27 17:02:02 534 main INFO - Group for method login was demo-controller
+08-27 17:02:02 535 main INFO - Group for method login was demo-controller
+08-27 17:02:02 589 main INFO - Cache Key Generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 589 main INFO - Caching aspect applied for cache models with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 591 main INFO - Cache key generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 591 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 760 main INFO - Cache Key Generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 762 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 765 main INFO - Cache key generated: com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 769 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.config.TimeParametersConfig(true)
+08-27 17:02:02 778 main INFO - Cache key generated: /demo/config.com.github.ever.controller.DemoRestController.config.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 778 main INFO - Caching aspect applied for cache operations with key /demo/config.com.github.ever.controller.DemoRestController.config.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 802 main INFO - Group for method config was demo-rest-controller
+08-27 17:02:02 807 main INFO - Group for method config was demo-rest-controller
+08-27 17:02:02 812 main INFO - Cache Key Generated: int(true)
+08-27 17:02:02 812 main INFO - Caching aspect applied for cache models with key int(true)
+08-27 17:02:02 813 main INFO - Cache Key Generated: int(true)
+08-27 17:02:02 814 main INFO - Caching aspect applied for cache modelDependencies with key int(true)
+08-27 17:02:02 814 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 814 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 815 main INFO - Cache key generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 815 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 824 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 825 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 827 main INFO - Cache key generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 828 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 830 main INFO - Cache key generated: /demo/divid.com.github.ever.controller.DemoRestController.divid.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 830 main INFO - Caching aspect applied for cache operations with key /demo/divid.com.github.ever.controller.DemoRestController.divid.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 872 main INFO - Group for method divid was demo-rest-controller
+08-27 17:02:02 909 main INFO - Group for method divid was demo-rest-controller
+08-27 17:02:02 928 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 929 main INFO - Caching aspect applied for cache models with key java.lang.String(true)
+08-27 17:02:02 930 main INFO - Cache Key Generated: java.lang.String(true)
+08-27 17:02:02 930 main INFO - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+08-27 17:02:02 934 main INFO - Cache key generated: /demo/exception.com.github.ever.controller.DemoRestController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 935 main INFO - Caching aspect applied for cache operations with key /demo/exception.com.github.ever.controller.DemoRestController.exception.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 942 main INFO - Group for method exception was demo-rest-controller
+08-27 17:02:02 945 main INFO - Group for method exception was demo-rest-controller
+08-27 17:02:02 956 main INFO - Generating unique operation named: exceptionUsingGET_1
+08-27 17:02:02 959 main INFO - Cache Key Generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 961 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 962 main INFO - Cache key generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 962 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 972 main INFO - Cache Key Generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 973 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 974 main INFO - Cache key generated: com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 974 main INFO - Caching aspect applied for cache modelProperties with key com.github.ever.pojo.ResponseData(true)
+08-27 17:02:02 974 main INFO - Cache key generated: /demo/listAllParameters.com.github.ever.controller.DemoRestController.listAllParameters.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 975 main INFO - Caching aspect applied for cache operations with key /demo/listAllParameters.com.github.ever.controller.DemoRestController.listAllParameters.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 976 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 17:02:02 978 main INFO - Group for method listAllParameters was demo-rest-controller
+08-27 17:02:02 980 main INFO - Cache Key Generated: int(true)
+08-27 17:02:02 980 main INFO - Caching aspect applied for cache models with key int(true)
+08-27 17:02:02 981 main INFO - Cache Key Generated: int(true)
+08-27 17:02:02 981 main INFO - Caching aspect applied for cache modelDependencies with key int(true)
+08-27 17:02:02 981 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 981 main INFO - Caching aspect applied for cache models with key com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 982 main INFO - Cache Key Generated: com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 982 main INFO - Caching aspect applied for cache modelDependencies with key com.github.ever.pojo.DemoBean(false)
+08-27 17:02:02 983 main INFO - Cache key generated: /demo/multi.com.github.ever.controller.DemoRestController.multi.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 983 main INFO - Caching aspect applied for cache operations with key /demo/multi.com.github.ever.controller.DemoRestController.multi.DefaultGenericTypeNamingStrategy
+08-27 17:02:02 988 main INFO - Group for method multi was demo-rest-controller
+08-27 17:02:02 990 main INFO - Group for method multi was demo-rest-controller
+08-27 17:02:03 035 main INFO - Initializing ProtocolHandler ["http-nio-8080"]
+08-27 17:02:03 064 main INFO - Starting ProtocolHandler ["http-nio-8080"]
+08-27 17:02:03 114 main INFO - Using a shared selector for servlet write/read
+08-27 17:02:03 160 main INFO - Tomcat started on port(s): 8080 (http)
+08-27 17:02:03 174 main INFO - Started SpringBootScalaDemoServiceApplication in 22.739 seconds (JVM running for 25.024)
