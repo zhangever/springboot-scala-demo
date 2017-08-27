@@ -9,6 +9,7 @@ http://localhost:8080/swagger-ui.html
 http://localhost:8080/demo/listAllParameters
 
 初始化脚本:
+```
 CREATE SCHEMA IF NOT EXISTS `localdb` DEFAULT CHARACTER SET utf8 ;
 USE `localdb` ;
 
@@ -26,3 +27,4 @@ insert into t_parameter(code,value)
 values
 ("max_item_size","10"),
 ("default_item_size","5");
+```
