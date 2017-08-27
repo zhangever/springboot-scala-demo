@@ -1,11 +1,12 @@
 # springboot-scala-demo
 springBoot+scala，清爽的不能再清爽了， 行走江湖必备
 
-目前已有springMvc、接口文档以及在线测试以及访问数据库的能力
+目前已有springMvc、安全校验、接口文档以及在线测试以及访问数据库的能力
 
 接口文档以及在线测试请访问:
 http://localhost:8080/swagger-ui.html
 
+可通过下面的例子来感受下scala的魅力:
 http://localhost:8080/demo/listAllParameters
 
 初始化脚本:
