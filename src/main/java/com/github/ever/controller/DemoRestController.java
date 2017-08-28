@@ -8,6 +8,11 @@ import com.github.ever.pojo.DemoBean;
 import com.github.ever.util.BizUtil;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.core.RedisCallback;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
@@ -27,10 +33,21 @@ public class DemoRestController {
     @Resource
     private TimeParametersConfig timeParametersConfig;
 
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
+
     @RequestMapping(value = "/config", method = RequestMethod.GET)
     public TimeParametersConfig config() {
         return timeParametersConfig;
     }
+
+    @RequestMapping(value = "/save2redis", method = RequestMethod.GET)
+    public ResponseData save2redis(String key, String value) {
+        redisTemplate.opsForValue().set(key, value);
+        String redisValue = redisTemplate.opsForValue().get(key);
+        return new ResponseData(ResponseStatus.SUCCESS, redisValue, null);
+    }
+
 
     @RequestMapping(value = "/listAllParameters", method = RequestMethod.GET)
     public ResponseData listAllParameters() {
