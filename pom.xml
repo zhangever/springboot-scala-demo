@@ -99,6 +99,13 @@
 			<version>1.0.6</version>
 		</dependency>
 
+		<!--redis-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-redis</artifactId>
+			<version>1.4.7.RELEASE</version>
+		</dependency>
+
 		<!-- log -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
