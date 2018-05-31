@@ -1,34 +1,31 @@
 package com.github.ever.domain
 
-import wangzx.scala_commons.sql._
-  /**
+/**
   * @author dapeng-tool
-  */@Table(value = "t_parameter", camelToUnderscore = true)
-class TParameter extends java.io.Serializable {
-   /**
-   * 
-   */
-  @Id(auto=true)
-  var id : Int =_
+  **/
+case class TParameter (
+  /**
+    *
+    */
+   id: Int,
 
-   /**
-   * 系统参数编码
-   */
-  var code : String =_
+  /**
+    * 系统参数编码
+    */
+   code: String,
 
-   /**
-   * 系统参数值
-   */
-  var value : String =_
+  /**
+    * 系统参数值
+    */
+   value: String,
 
-   /**
-   * 状态,0:无效(invalid);1:有效(valid)
-   */
-  var status : Int =_
+  /**
+    * 状态,0:无效(invalid);1:有效(valid)
+    */
+   status: Int,
 
-   /**
-   * 备注
-   */
-  var remark : String =_
-
-}
+  /**
+    * 备注
+    */
+   remark: String
+                      )

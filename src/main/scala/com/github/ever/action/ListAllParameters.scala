@@ -13,6 +13,6 @@ class ListAllParameters {
   def action: java.util.List[TParameter] = {
     val parameterDos = BgSql.listAllParameters()
 //    parameterDos.map(parameter=>build[TParameter](parameter))
-    List.empty.asJavamit
+    List.empty.asJava
   }
 }
