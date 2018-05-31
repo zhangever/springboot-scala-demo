@@ -1,7 +1,8 @@
 package com.github.ever.action
 
-import com.isuwang.commons.converters.Implicits._
+
 import collection.JavaConverters._
+import wangzx.scala_commons.sql.BeanBuilder._
 import com.github.ever.BgSql
 import com.github.ever.pojo.TParameter
 
@@ -11,6 +12,7 @@ import com.github.ever.pojo.TParameter
 class ListAllParameters {
   def action: java.util.List[TParameter] = {
     val parameterDos = BgSql.listAllParameters()
-    parameterDos.convertToList[TParameter].asJava
+//    parameterDos.map(parameter=>build[TParameter](parameter))
+    List.empty.asJavamit
   }
 }
